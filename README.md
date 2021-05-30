@@ -28,9 +28,10 @@
 | ------------- | ------------- | ------------------------------ |
 | postal_code   | string        | null: false                    |
 | prefecture    | string        | null: false                    |
-| city          | string        | null: false                    |
-| house_number  | string        | null: false                    |
+| city          | string        |                                |
+| house_number  | string        |                                |
 | building_name | string        |                                |
+| donation      | references    | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :purchase
