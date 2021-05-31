@@ -1,6 +1,6 @@
 class DonationAddress
   include ActiveModel::Model
-  attr_accessor :postal_code, :prefecture, :city, :house_number, :building_name, :price, :user_id
+  attr_accessor :price, :user_id, :postal_code, :prefecture, :city, :house_number, :building_name
 
   with_options presence: true do
     validates :price, numericality: {only_integer: true, greater_than_or_equal_to: 1, less_than_or_eqal_to: 1000000, message: 'is valid'}
