@@ -1,0 +1,2 @@
+class DonationAddress
+end
