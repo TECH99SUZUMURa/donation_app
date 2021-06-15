@@ -9,6 +9,7 @@ class DonationAddress
   end
   validates :prefecture, numericality: {other_than: 0, message: "can't be blank"}
 
+  
   def save
     donation = Donation.create(price: price, user_id: user_id)
     Address.create(postal_code: postal_code, prefecture: prefecture, city: city, house_number: house_number, building_name: building_name, donation_id: donation.id)
